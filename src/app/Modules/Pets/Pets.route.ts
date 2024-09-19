@@ -16,6 +16,6 @@ router.post(
 router.get('/get-pets', PetsController.getAllPetsFromDB);
 
 //Delete a pet or multiple pets
-router.delete('/delete-pets', PetsController.deletePetsFromDB);
+router.delete('/', PetsController.deletePetsFromDB);
 
 export const PetsRoutes = router;

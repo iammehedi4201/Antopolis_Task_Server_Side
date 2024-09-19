@@ -10,7 +10,17 @@ app.use(express.json());
 app.use(express.text());
 
 //using cors
-app.use(cors());
+const allowedOrigins = [
+  'http://localhost:3000',
+  'https://task-client-side-rust.vercel.app',
+];
+
+app.use(
+  cors({
+    origin: allowedOrigins,
+    credentials: true,
+  }),
+);
 
 //application routes
 app.use('/api/v1', route);
