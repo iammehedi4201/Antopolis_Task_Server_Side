@@ -1,0 +1,15 @@
+//Note the stack property is a string that represents the stack trace at the point where an error was created.
+class AppError extends Error {
+  public statusCode?: number;
+  constructor(message: string, statusCode?: number, stack = '') {
+    super(message);
+    this.statusCode = statusCode;
+    if (stack) {
+      this.stack = stack;
+    } else {
+      Error.captureStackTrace(this, this.constructor);
+    }
+  }
+}
+
+export default AppError;
