@@ -1,4 +1,4 @@
-# 🚀 Animals Filtering - Client Side
+# 🚀 Animals Filtering - Server Side
 
 This is the client side for the Shoe Management Application. It is built with React.js and communicates with a server-side API.
 
@@ -32,7 +32,7 @@ npm install
 npm run dev
 ```
 
-- Your application should now be running and accessible in a web browser at http://localhost:3000 (or whatever port you have configured).
+- Your application should now be running and accessible in a web browser at http://localhost:4040 (or whatever port you have configured).
 
 ## 🌟 Features
 
